@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ChaloCaptain">
-        <activity android:name=".CaptainProfile"></activity>
+        <activity android:name=".Dashboard"></activity>
+        <activity android:name=".CaptainProfile" />
         <activity android:name=".Register" />
         <activity android:name=".Login">
             <intent-filter>
