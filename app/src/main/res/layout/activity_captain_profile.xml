@@ -13,7 +13,7 @@
         android:id="@+id/captainProfile_page"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:context=".CaptainProfile">
+        tools:context=".Captain_Info">
 
         <ImageView
             android:id="@+id/imageView3"

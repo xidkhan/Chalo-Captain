@@ -38,7 +38,7 @@ public class Login extends AppCompatActivity{
         startActivity(intent);
     }
     public void loginPage(){
-        Intent intent = new Intent(this, Dashboard.class);
+        Intent intent = new Intent(this, Category.class);
         startActivity(intent);
     }
 }

@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class CaptainProfile extends AppCompatActivity {
+public class Captain_Info extends AppCompatActivity {
 
     private Button updateButton;
 
