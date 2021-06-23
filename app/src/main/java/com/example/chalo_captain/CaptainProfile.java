@@ -24,7 +24,7 @@ public class CaptainProfile extends AppCompatActivity {
         });
     }
     public void openLogin(){
-        Intent intent = new Intent(this, Login.class);
+        Intent intent = new Intent(this, Dashboard.class);
         startActivity(intent);
     }
 }
