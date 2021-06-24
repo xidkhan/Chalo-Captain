@@ -14,17 +14,5 @@ public class Category extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_category);
-
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
-
-//        back_button = back_button.findViewById(R.id.back_pressed);
-//
-//        back_button.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Category.super.onBackPressed();
-//            }
-//        });
     }
 }
