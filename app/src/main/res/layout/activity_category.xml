@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     android:fillViewport="true"
     android:isScrollContainer="true"
-    tools:context=".Category">
+    tools:context=".Category"
+    android:paddingBottom="20dp">
 
     <LinearLayout
         android:layout_width="match_parent"

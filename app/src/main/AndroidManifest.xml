@@ -10,8 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ChaloCaptain">
         <activity android:name=".Category"
-            android:parentActivityName=".Login"></activity>
-        <activity android:name=".Dashboard" />
+            android:parentActivityName=".Login"/>
+        <activity android:name=".Dashboard"/>
         <activity android:name=".Captain_Info" />
         <activity android:name=".Register" />
         <activity android:name=".Login">
