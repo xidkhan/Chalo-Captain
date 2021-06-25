@@ -16,6 +16,7 @@
         android:orientation="vertical">
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/offer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
@@ -28,8 +29,10 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:padding="25dp"
-                    android:text="Rent"
+                    android:paddingTop="20dp"
+                    android:paddingLeft="20dp"
+                    android:text="OFFER"
+                    android:textColor="@color/black"
                     android:textSize="30sp" />
 
                 <Button
@@ -37,19 +40,22 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentBottom="true"
                     android:background="#00000000"
-                    android:padding="20dp"
+                    android:textColor="@color/black"
+                    android:paddingLeft="20dp"
                     android:text="Expand All" />
 
                 <ImageView
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
                     android:layout_alignParentRight="true"
-                    android:src="@drawable/categories_rent_car_icon" />
+                    android:paddingRight="20dp"
+                    android:src="@drawable/logo" />
 
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/request"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
@@ -63,8 +69,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
-                    android:padding="25dp"
-                    android:text="Rent"
+                    android:paddingTop="20dp"
+                    android:paddingRight="20dp"
+                    android:text="REQUESTS"
                     android:textColor="@color/white"
                     android:textSize="30sp" />
 
@@ -74,20 +81,21 @@
                     android:layout_alignParentRight="true"
                     android:layout_alignParentBottom="true"
                     android:background="#00000000"
-                    android:padding="20dp"
+                    android:paddingRight="20dp"
                     android:text="Expand All" />
 
                 <ImageView
-                    android:layout_width="120dp"
+                    android:layout_width="100dp"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="20dp"
-                    android:src="@drawable/categories_restaurant_icon" />
+                    android:src="@drawable/vehicle" />
 
             </RelativeLayout>
 
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/dashboard"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
@@ -100,8 +108,10 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:padding="25dp"
-                    android:text="Rent"
+                    android:paddingTop="20dp"
+                    android:paddingLeft="20dp"
+                    android:text="DASHBOARD"
+                    android:textColor="@color/black"
                     android:textSize="30sp" />
 
                 <Button
@@ -109,54 +119,18 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentBottom="true"
                     android:background="#00000000"
-                    android:padding="20dp"
+                    android:textColor="@color/black"
+                    android:paddingLeft="20dp"
                     android:text="Expand All" />
 
                 <ImageView
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:layout_alignParentRight="true"
-                    android:src="@drawable/categories_rent_car_icon" />
-
-            </RelativeLayout>
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:layout_margin="20dp"
-                android:background="@drawable/background1">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    android:padding="25dp"
-                    android:text="Rent"
-                    android:textColor="@color/white"
-                    android:textSize="30sp" />
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    android:layout_alignParentBottom="true"
-                    android:background="#00000000"
-                    android:padding="20dp"
-                    android:text="Expand All" />
-
-                <ImageView
-                    android:layout_width="120dp"
+                    android:layout_width="100dp"
                     android:layout_height="match_parent"
-                    android:layout_marginLeft="20dp"
-                    android:src="@drawable/categories_restaurant_icon" />
+                    android:layout_alignParentRight="true"
+                    android:paddingRight="10dp"
+                    android:src="@drawable/dashboard" />
 
             </RelativeLayout>
-
         </androidx.cardview.widget.CardView>
 
     </LinearLayout>
