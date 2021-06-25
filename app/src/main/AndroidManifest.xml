@@ -9,9 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ChaloCaptain">
-        <activity android:name=".Category"/>
-        <activity android:name=".Dashboard"/>
-        <activity android:name=".Captain_Info" />
+        <activity android:name=".Rating"></activity>
+        <activity android:name=".Payment" />
+        <activity android:name=".Vehicle" />
+        <activity android:name=".Booking" />
+        <activity android:name=".Captain_Profile" />
+        <activity android:name=".Category" />
+        <activity android:name=".Dashboard" />
+        <activity android:name=".Captain_Update" />
         <activity android:name=".Register" />
         <activity android:name=".Login">
             <intent-filter>

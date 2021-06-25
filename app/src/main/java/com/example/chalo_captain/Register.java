@@ -37,7 +37,7 @@ public class    Register extends AppCompatActivity {
         startActivity(intent);
     }
     public void openCaptainPage(){
-        Intent intent= new Intent(this, Captain_Info.class);
+        Intent intent= new Intent(this, Captain_Update.class);
         startActivity(intent);
     }
 }
