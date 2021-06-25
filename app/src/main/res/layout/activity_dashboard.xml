@@ -74,7 +74,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/d1"></ImageView>
+                        android:src="@drawable/profile"></ImageView>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -201,7 +201,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/d4"></ImageView>
+                        android:src="@drawable/payment"></ImageView>
 
                     <TextView
                         android:layout_width="wrap_content"
