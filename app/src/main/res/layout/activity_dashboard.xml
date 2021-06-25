@@ -50,7 +50,7 @@
             android:rowCount="3">
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/d1"
+                android:id="@+id/profile"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_rowWeight="1"
@@ -60,7 +60,7 @@
                 android:layout_marginRight="15dp"
                 android:layout_marginBottom="10dp"
                 android:elevation="3dp"
-                app:cardBackgroundColor="#ffffff"
+                app:cardBackgroundColor="#FFFFFFFF"
                 app:cardCornerRadius="10dp">
 
                 <LinearLayout
@@ -92,7 +92,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/d2"
+                android:id="@+id/bookings"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_rowWeight="1"
@@ -135,7 +135,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/d3"
+                android:id="@+id/vehicle"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_rowWeight="1"
@@ -177,7 +177,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/d4"
+                android:id="@+id/payments"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_rowWeight="1"
@@ -219,7 +219,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/d5"
+                android:id="@+id/home"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_rowWeight="1"
@@ -261,7 +261,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/d6"
+                android:id="@+id/ratings"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_rowWeight="1"
