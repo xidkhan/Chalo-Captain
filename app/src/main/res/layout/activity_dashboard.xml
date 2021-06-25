@@ -19,7 +19,7 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="30dp"
+            android:layout_height="wrap_content"
             android:layout_weight="2">
 
 <!--            <ImageView-->
@@ -30,12 +30,12 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="false"
-                android:layout_alignParentBottom="false"
                 android:layout_centerInParent="true"
-                android:layout_marginBottom="137dp"
-                android:gravity="center"
+                android:layout_marginBottom="20dp"
                 android:text="CAPTAIN'S DASHBOARD"
+                android:textSize="20sp"
+                android:textFontWeight="3"
+                android:gravity="center"
                 android:textColor="@color/black" />
         </RelativeLayout>
 
