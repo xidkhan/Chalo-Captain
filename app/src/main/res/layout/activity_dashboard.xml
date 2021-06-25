@@ -45,7 +45,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginTop="10dp"
-                        android:text="DASHBOARD"
+                        android:text="CAPTAIN'S DASHBOARD"
                         android:textColor="#ffffffff"
                         android:textSize="20sp"
                         android:textStyle="bold" />
@@ -242,10 +242,10 @@
                         android:orientation="horizontal">
 
                         <androidx.cardview.widget.CardView
+                            android:id="@+id/homeCardView"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
-                            android:layout_marginRight="0dp"
                             android:layout_weight="1"
                             android:orientation="vertical">
 
@@ -271,7 +271,6 @@
                                     android:textSize="16dp" />
 
                                 <Button
-                                    android:id="@+id/buttonHome"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:background="@android:color/transparent" />
