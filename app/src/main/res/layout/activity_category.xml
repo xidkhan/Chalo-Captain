@@ -32,7 +32,8 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/offer"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:elevation="10dp">
 
             <RelativeLayout
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -74,7 +75,8 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/request"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:elevation="10dp">
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -113,7 +115,8 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/dashboard"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:elevation="10dp">
 
             <RelativeLayout
                 android:layout_width="match_parent"
