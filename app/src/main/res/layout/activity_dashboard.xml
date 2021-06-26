@@ -6,11 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".Dashboard">
 
-    <!--    <include-->
-    <!--        android:id="@+id/toolbar"-->
-    <!--        layout="@layout/toolbar"-->
-    <!--        app:layout_constraintTop_toTopOf="parent" />-->
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -21,11 +16,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="2">
-
-            <!--            <ImageView-->
-            <!--                android:layout_width="fill_parent"-->
-            <!--                android:layout_height="match_parent"-->
-            <!--                android:background="@drawable/back"/>-->
 
             <TextView
                 android:layout_width="wrap_content"
@@ -43,11 +33,11 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="8"
-            android:alignmentMode="alignMargins"
             android:columnCount="2"
+            android:rowCount="3"
+            android:alignmentMode="alignMargins"
             android:columnOrderPreserved="false"
-            android:padding="15dp"
-            android:rowCount="3">
+            android:padding="15dp">
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/profile"
@@ -60,8 +50,8 @@
                 android:layout_marginRight="15dp"
                 android:layout_marginBottom="10dp"
                 android:elevation="3dp"
-                app:cardBackgroundColor="#FFFFFFFF"
-                app:cardCornerRadius="10dp">
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="8dp">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -200,7 +190,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/payment"/>
+                        android:src="@drawable/payment" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -209,7 +199,7 @@
                         android:padding="5dp"
                         android:text="PAYMENT"
                         android:textAlignment="center"
-                        android:textSize="15dp"/>
+                        android:textSize="15dp" />
 
 
                 </LinearLayout>
@@ -242,7 +232,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/home"/>
+                        android:src="@drawable/home" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -251,7 +241,7 @@
                         android:padding="5dp"
                         android:text="HOME"
                         android:textAlignment="center"
-                        android:textSize="15dp"/>
+                        android:textSize="15dp" />
 
 
                 </LinearLayout>
@@ -284,7 +274,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/ratings"/>
+                        android:src="@drawable/ratings" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -293,7 +283,7 @@
                         android:padding="5dp"
                         android:text="RATING"
                         android:textAlignment="center"
-                        android:textSize="15dp"/>
+                        android:textSize="15dp" />
 
 
                 </LinearLayout>
