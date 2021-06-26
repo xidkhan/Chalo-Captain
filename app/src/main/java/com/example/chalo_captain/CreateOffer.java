@@ -7,26 +7,26 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class Offer extends AppCompatActivity {
+public class CreateOffer extends AppCompatActivity {
 
     private Button createOffer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_offer);
+        setContentView(R.layout.activity_create_offer);
 
         createOffer = (Button)findViewById(R.id.createOfferButton);
         createOffer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                openDashboard();
+                openCategory();
             }
         });
     }
 
-    public void openDashboard(){
-        Intent intent = new Intent(this, Dashboard.class);
+    public void openCategory(){
+        Intent intent = new Intent(this, Category.class);
         startActivity(intent);
     }
 }
