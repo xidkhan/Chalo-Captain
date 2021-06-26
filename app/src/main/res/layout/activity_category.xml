@@ -11,9 +11,8 @@
 
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginRight="20dp"
         android:orientation="vertical">
 
         <RelativeLayout
@@ -24,9 +23,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
-                android:padding="10dp"
                 android:text="FEATURES"
                 android:textColor="@color/black"
+                android:paddingTop="20dp"
                 android:textSize="30sp" />
         </RelativeLayout>
 
@@ -38,16 +37,16 @@
             <RelativeLayout
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
-                android:layout_height="120dp"
+                android:layout_height="130dp"
                 android:layout_margin="20dp"
                 android:background="@drawable/background3"
                 android:elevation="5dp"
-                android:padding="10dp">
+                >
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingLeft="20dp"
+                    android:paddingLeft="10dp"
                     android:paddingTop="20dp"
                     android:text="OFFER"
                     android:textColor="@color/black"
@@ -58,7 +57,7 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentBottom="true"
                     android:background="#00000000"
-                    android:paddingLeft="20dp"
+                    android:paddingLeft="10dp"
                     android:text="Create"
                     android:textColor="@color/black" />
 
@@ -66,7 +65,7 @@
                     android:layout_width="100dp"
                     android:layout_height="match_parent"
                     android:layout_alignParentRight="true"
-                    android:paddingRight="20dp"
+                    android:paddingRight="10dp"
                     android:src="@drawable/logo" />
 
             </RelativeLayout>
@@ -79,17 +78,16 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="120dp"
+                android:layout_height="130dp"
                 android:layout_margin="20dp"
-                android:background="@drawable/background1"
-                android:padding="10dp">
+                android:background="@drawable/background1">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
                     android:paddingTop="20dp"
-                    android:paddingRight="20dp"
+                    android:paddingRight="10dp"
                     android:text="REQUESTS"
                     android:textColor="@color/white"
                     android:textSize="30sp" />
@@ -100,13 +98,12 @@
                     android:layout_alignParentRight="true"
                     android:layout_alignParentBottom="true"
                     android:background="#00000000"
-                    android:paddingRight="20dp"
+                    android:paddingRight="10dp"
                     android:text="View" />
 
                 <ImageView
-                    android:layout_width="100dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_marginLeft="20dp"
                     android:src="@drawable/vehicle" />
 
             </RelativeLayout>
@@ -120,15 +117,14 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="120dp"
+                android:layout_height="130dp"
                 android:layout_margin="20dp"
-                android:background="@drawable/background2"
-                android:padding="10dp">
+                android:background="@drawable/background2">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingLeft="20dp"
+                    android:paddingLeft="10dp"
                     android:paddingTop="20dp"
                     android:text="DASHBOARD"
                     android:textColor="@color/black"
@@ -139,7 +135,7 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentBottom="true"
                     android:background="#00000000"
-                    android:paddingLeft="20dp"
+                    android:paddingLeft="10dp"
                     android:text="Go to"
                     android:textColor="@color/black" />
 
@@ -147,7 +143,6 @@
                     android:layout_width="100dp"
                     android:layout_height="match_parent"
                     android:layout_alignParentRight="true"
-                    android:paddingRight="10dp"
                     android:src="@drawable/dashboard" />
 
             </RelativeLayout>
