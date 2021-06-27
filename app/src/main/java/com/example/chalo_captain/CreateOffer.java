@@ -26,7 +26,7 @@ public class CreateOffer extends AppCompatActivity {
     }
 
     public void openCategory(){
-        Intent intent = new Intent(this, Category.class);
+        Intent intent = new Intent(this, MyOffers.class);
         startActivity(intent);
     }
 }
