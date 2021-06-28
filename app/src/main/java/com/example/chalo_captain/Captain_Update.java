@@ -9,7 +9,10 @@ import android.widget.Button;
 
 public class Captain_Update extends AppCompatActivity {
 
+    private Button captainButton, vehicleButton;
     private Button updateButton;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +25,31 @@ public class Captain_Update extends AppCompatActivity {
                 openLogin();
             }
         });
+
+        captainButton = findViewById(R.id.imageView3);
+        captainButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent();
+                intent.setType("image/*");
+                intent.setAction(Intent.ACTION_GET_CONTENT);
+                int selectImageCode = 1;
+                startActivityForResult(Intent.createChooser(intent,"Title"),selectImageCode);
+            }
+        });
+
+        vehicleButton = findViewById(R.id.vehicle_image);
+        vehicleButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent();
+                intent.setType("image/*");
+                intent.setAction(Intent.ACTION_GET_CONTENT);
+                int selectImageCode = 1;
+                startActivityForResult(Intent.createChooser(intent,"Title"),selectImageCode);
+            }
+        });
+
     }
     public void openLogin(){
         Intent intent = new Intent(this, Dashboard.class);
