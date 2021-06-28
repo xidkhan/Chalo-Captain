@@ -39,6 +39,8 @@ public class Offers_Management extends AppCompatActivity {
         startActivity(intent);
     }
 
+    //change to MyOffers --- if required
+
     public void openMyOffers(){
         Intent intent = new Intent(this, MyOffers.class);
         startActivity(intent);

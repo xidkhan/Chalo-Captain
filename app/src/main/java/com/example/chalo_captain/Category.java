@@ -30,7 +30,10 @@ public class Category extends AppCompatActivity implements View.OnClickListener{
         Intent intent;
         switch (v.getId()) {
             case R.id.offer:
-                intent = new Intent(this, Offers_Management.class);
+
+                //revert it back to (Offers_Management) later..
+
+                intent = new Intent(this, CreateOffer.class);
                 startActivity(intent);
                 break;
             case R.id.request:
