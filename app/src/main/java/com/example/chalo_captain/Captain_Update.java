@@ -5,14 +5,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.Spinner;
 
-public class Captain_Update extends AppCompatActivity {
+public class Captain_Update extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
     private Button captainButton, vehicleButton;
     private Button updateButton;
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,9 +51,29 @@ public class Captain_Update extends AppCompatActivity {
             }
         });
 
+        Spinner spinner = findViewById(R.id.vehicleType);
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.vehicle_type, android.R.layout.simple_spinner_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinner.setAdapter(adapter);
+
+        spinner.setOnItemSelectedListener(this);
     }
     public void openLogin(){
         Intent intent = new Intent(this, Dashboard.class);
         startActivity(intent);
+    }
+
+    @Override
+    public void onItemSelected(AdapterView<?> parent, View view, int i, long l) {
+            if(parent.getItemAtPosition(i).equals("Choose Type")){
+
+            }else {
+                String item = parent.getItemAtPosition(i).toString();
+            }
+    }
+
+    @Override
+    public void onNothingSelected(AdapterView<?> adapterView) {
+
     }
 }

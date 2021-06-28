@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">Chalo-Captain</string>
+
+    <string-array name="vehicle_type">
+
+        <item>
+            Car
+        </item>
+
+        <item>
+            Bike
+        </item>
+
+    </string-array>
+
 </resources>
