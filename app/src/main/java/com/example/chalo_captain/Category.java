@@ -7,6 +7,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.Adaptor.Adapter;
+
 public class Category extends AppCompatActivity implements View.OnClickListener{
 
     private CardView offerCard, requestCard, dashboardCard;
@@ -37,7 +39,7 @@ public class Category extends AppCompatActivity implements View.OnClickListener{
                 startActivity(intent);
                 break;
             case R.id.request:
-                intent = new Intent(this, Request.class);
+                intent = new Intent(this, RiderRequests.class);
                 startActivity(intent);
                 break;
             case R.id.dashboard:
