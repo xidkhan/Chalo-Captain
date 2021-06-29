@@ -41,6 +41,8 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyHolder> {
     @Override
     public void onBindViewHolder(@NonNull Adapter.MyHolder holder, int position) {
 
+        final RowModel temp = modelList.get(position);
+
         String name = modelList.get(position).getName();
         String message = modelList.get(position).getMessage();
         int image = modelList.get(position).getImage();
@@ -48,6 +50,18 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyHolder> {
         holder.name.setText(name);
         holder.message.setText(message);
         holder.imageView.setImageResource(R.drawable.profile);
+
+        holder.name.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(context, RequestDetails.class);
+                intent.putExtra("name",temp.getName());
+                intent.putExtra("message",temp.getMessage());
+                intent.putExtra("image",temp.getImage());
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                context.startActivity(intent);
+            }
+        });
 
     }
 
@@ -73,10 +87,12 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyHolder> {
         @Override
         public void onClick(View v) {
             int position = getAdapterPosition();
-            Toast.makeText(context, "position"+position,Toast.LENGTH_SHORT).show();
-            Intent intent = new Intent(context, RequestDetails.class);
-            intent.putExtra("name",modelList.get(position).getName());
-            context.startActivity(intent);
+//            Toast.makeText(context, "position"+position,Toast.LENGTH_SHORT).show();
+//            Intent intent = new Intent(context, RequestDetails.class);
+//            intent.putExtra("name",modelList.get(position).getName());
+
+//            context.startActivity(intent);
+
         }
     }
 }
