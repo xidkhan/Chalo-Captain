@@ -1,16 +1,19 @@
 package com.example.Adaptor;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.Model.RowModel;
 import com.example.chalo_captain.R;
+import com.example.chalo_captain.RequestDetails;
 
 import org.w3c.dom.Text;
 
@@ -53,7 +56,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyHolder> {
         return modelList.size();
     }
 
-    class MyHolder extends RecyclerView.ViewHolder {
+    class MyHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
         CircleImageView imageView;
         TextView name, message;
@@ -64,7 +67,16 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyHolder> {
             imageView = itemView.findViewById(R.id.profile);
             name = itemView.findViewById(R.id.name);
             message = itemView.findViewById(R.id.message);
+            itemView.setOnClickListener(this);
+        }
 
+        @Override
+        public void onClick(View v) {
+            int position = getAdapterPosition();
+            Toast.makeText(context, "position"+position,Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(context, RequestDetails.class);
+            intent.putExtra("name",modelList.get(position).getName());
+            context.startActivity(intent);
         }
     }
 }

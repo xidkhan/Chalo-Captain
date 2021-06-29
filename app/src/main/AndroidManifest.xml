@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ChaloCaptain">
-        <activity android:name=".RiderRequests"></activity>
+        <activity android:name=".RequestDetails"></activity>
+        <activity android:name=".RiderRequests" />
         <activity android:name=".CreateOffer$OfferAdapter" />
         <activity android:name=".StartEndPoints" />
         <activity android:name=".ResetPassword" />
