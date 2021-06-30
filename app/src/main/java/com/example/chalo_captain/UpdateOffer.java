@@ -7,26 +7,27 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class Create_Offer extends AppCompatActivity {
+public class UpdateOffer extends AppCompatActivity {
 
-    Button createOffer;
+    Button updateOffer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_create_offer);
+        setContentView(R.layout.activity_update_offer);
 
-        createOffer = (Button)findViewById(R.id.updateOffer);
-        createOffer.setOnClickListener(new View.OnClickListener() {
+        updateOffer = findViewById(R.id.updateOffer);
+        updateOffer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openOffers();
+                updateOffer();
             }
         });
-    }
 
-    public void openOffers(){
+    }
+    public void updateOffer(){
         Intent intent = new Intent(this, Offers.class);
         startActivity(intent);
     }
+
 }
