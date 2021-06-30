@@ -14,7 +14,7 @@ import java.util.List;
 
 public class Requests extends AppCompatActivity {
 
-    RecyclerView recyclerView;
+    RecyclerView recyclerViewRequest;
     RequestsAdapter myRequestsAdapter;
     List<RequestRowModel> modelList;
 
@@ -23,10 +23,10 @@ public class Requests extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_requests);
 
-        recyclerView = findViewById(R.id.recyclerView);
+        recyclerViewRequest = findViewById(R.id.recyclerView);
         modelList = new ArrayList<>();
 
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        recyclerViewRequest.setLayoutManager(new LinearLayoutManager(this));
 
         for (int i = 0; i < 10; i++)
         {
@@ -34,7 +34,7 @@ public class Requests extends AppCompatActivity {
             modelList.add(requestRowModel);
         }
         myRequestsAdapter = new RequestsAdapter(this,modelList);
-        recyclerView.setAdapter(myRequestsAdapter);
+        recyclerViewRequest.setAdapter(myRequestsAdapter);
     }
 }
 

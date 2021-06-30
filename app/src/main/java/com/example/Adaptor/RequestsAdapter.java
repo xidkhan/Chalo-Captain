@@ -21,11 +21,11 @@ import de.hdodenhof.circleimageview.CircleImageView;
 public class RequestsAdapter extends RecyclerView.Adapter<RequestsAdapter.MyHolder> {
 
     Context context;
-    List<RequestRowModel> modelList;
+    List<RequestRowModel> requestModelList;
 
-    public RequestsAdapter(Context context, List<RequestRowModel> modelList) {
+    public RequestsAdapter(Context context, List<RequestRowModel> requestModelList) {
         this.context = context;
-        this.modelList = modelList;
+        this.requestModelList = requestModelList;
     }
 
     @NonNull
@@ -38,11 +38,11 @@ public class RequestsAdapter extends RecyclerView.Adapter<RequestsAdapter.MyHold
     @Override
     public void onBindViewHolder(@NonNull RequestsAdapter.MyHolder holder, int position) {
 
-        final RequestRowModel temp = modelList.get(position);
+        final RequestRowModel temp = requestModelList.get(position);
 
-        String name = modelList.get(position).getName();
-        String message = modelList.get(position).getMessage();
-        int image = modelList.get(position).getImage();
+        String name = requestModelList.get(position).getName();
+        String message = requestModelList.get(position).getMessage();
+        int image = requestModelList.get(position).getImage();
 
         holder.name.setText(name);
         holder.message.setText(message);
@@ -64,7 +64,7 @@ public class RequestsAdapter extends RecyclerView.Adapter<RequestsAdapter.MyHold
 
     @Override
     public int getItemCount() {
-        return modelList.size();
+        return requestModelList.size();
     }
 
     class MyHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
