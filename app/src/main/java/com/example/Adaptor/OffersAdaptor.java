@@ -1,4 +1,4 @@
-package com.example.chalo_captain;
+package com.example.Adaptor;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -10,19 +10,21 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class Offers_RecyclerAdaptor extends RecyclerView.Adapter<Offers_RecyclerAdaptor.ViewHolder> {
+import com.example.chalo_captain.R;
+
+public class OffersAdaptor extends RecyclerView.Adapter<OffersAdaptor.ViewHolder> {
 
     String data[];
     Context context;
 
-    public Offers_RecyclerAdaptor(Context context, String[] data) {
+    public OffersAdaptor(Context context, String[] data) {
         this.data = data;
         this.context = context;
     }
 
     @NonNull
     @Override
-    public Offers_RecyclerAdaptor.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public OffersAdaptor.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater layoutInflater= LayoutInflater.from(parent.getContext());
         View view = layoutInflater.inflate(R.layout.custom_design,parent,false);
         ViewHolder viewHolder = new ViewHolder(view);
@@ -30,7 +32,7 @@ public class Offers_RecyclerAdaptor extends RecyclerView.Adapter<Offers_Recycler
     }
 
     @Override
-    public void onBindViewHolder(@NonNull Offers_RecyclerAdaptor.ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull OffersAdaptor.ViewHolder holder, int position) {
 
         holder.textView.setText(data[position]);
         holder.textView.setOnClickListener(new View.OnClickListener() {

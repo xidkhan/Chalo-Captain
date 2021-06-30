@@ -1,12 +1,12 @@
 package com.example.Model;
 
-public class RowModel {
+public class RequestRowModel {
 
     String name;
     String message;
     int image;
 
-    public RowModel(String name, String message, int image) {
+    public RequestRowModel(String name, String message, int image) {
         this.name = name;
         this.message = message;
         this.image = image;

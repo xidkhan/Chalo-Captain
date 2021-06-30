@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ChaloCaptain">
         <activity android:name=".RequestDetails"></activity>
-        <activity android:name=".RiderRequests" />
+        <activity android:name=".Requests" />
         <activity android:name=".CreateOffer$OfferAdapter" />
         <activity android:name=".StartEndPoints" />
         <activity android:name=".ResetPassword" />

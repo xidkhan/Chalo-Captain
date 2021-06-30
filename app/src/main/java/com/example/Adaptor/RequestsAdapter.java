@@ -6,27 +6,24 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.Model.RowModel;
+import com.example.Model.RequestRowModel;
 import com.example.chalo_captain.R;
 import com.example.chalo_captain.RequestDetails;
-
-import org.w3c.dom.Text;
 
 import java.util.List;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
-public class Adapter extends RecyclerView.Adapter<Adapter.MyHolder> {
+public class RequestsAdapter extends RecyclerView.Adapter<RequestsAdapter.MyHolder> {
 
     Context context;
-    List<RowModel> modelList;
+    List<RequestRowModel> modelList;
 
-    public Adapter(Context context, List<RowModel> modelList) {
+    public RequestsAdapter(Context context, List<RequestRowModel> modelList) {
         this.context = context;
         this.modelList = modelList;
     }
@@ -39,9 +36,9 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyHolder> {
     }
 
     @Override
-    public void onBindViewHolder(@NonNull Adapter.MyHolder holder, int position) {
+    public void onBindViewHolder(@NonNull RequestsAdapter.MyHolder holder, int position) {
 
-        final RowModel temp = modelList.get(position);
+        final RequestRowModel temp = modelList.get(position);
 
         String name = modelList.get(position).getName();
         String message = modelList.get(position).getMessage();

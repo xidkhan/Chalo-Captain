@@ -6,22 +6,22 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 
-import com.example.Adaptor.Adapter;
-import com.example.Model.RowModel;
+import com.example.Adaptor.RequestsAdapter;
+import com.example.Model.RequestRowModel;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class RiderRequests extends AppCompatActivity {
+public class Requests extends AppCompatActivity {
 
     RecyclerView recyclerView;
-    Adapter myAdapter;
-    List<RowModel> modelList;
+    RequestsAdapter myRequestsAdapter;
+    List<RequestRowModel> modelList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_rider_requests);
+        setContentView(R.layout.activity_requests);
 
         recyclerView = findViewById(R.id.recyclerView);
         modelList = new ArrayList<>();
@@ -30,11 +30,11 @@ public class RiderRequests extends AppCompatActivity {
 
         for (int i = 0; i < 10; i++)
         {
-            RowModel rowModel = new RowModel("abc", "111", R.drawable.logo);
-            modelList.add(rowModel);
+            RequestRowModel requestRowModel = new RequestRowModel("abc", "111", R.drawable.logo);
+            modelList.add(requestRowModel);
         }
-        myAdapter = new Adapter(this,modelList);
-        recyclerView.setAdapter(myAdapter);
+        myRequestsAdapter = new RequestsAdapter(this,modelList);
+        recyclerView.setAdapter(myRequestsAdapter);
     }
 }
 

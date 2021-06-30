@@ -9,6 +9,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.Adaptor.OffersAdaptor;
+
 public class CreateOffer extends AppCompatActivity {
 
     private Button createOffer;
@@ -35,7 +37,7 @@ public class CreateOffer extends AppCompatActivity {
     public static class OfferAdapter extends AppCompatActivity {
 
         RecyclerView recyclerView;
-        Offers_RecyclerAdaptor offersRecyclerAdaptor;
+        OffersAdaptor offersRecyclerAdaptor;
 
         String monthNames[] = {"Offer 1","Offer 2","Offer 3","Offer 4","Offer 5","Offer 6"};
 
@@ -46,7 +48,7 @@ public class CreateOffer extends AppCompatActivity {
 
             recyclerView = findViewById(R.id.recycleView);
             recyclerView.setLayoutManager(new LinearLayoutManager(this));
-            offersRecyclerAdaptor = new Offers_RecyclerAdaptor(this, monthNames);
+            offersRecyclerAdaptor = new OffersAdaptor(this, monthNames);
             recyclerView.setAdapter(offersRecyclerAdaptor);
         }
     }
