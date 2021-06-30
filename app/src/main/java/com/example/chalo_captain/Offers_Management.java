@@ -17,13 +17,13 @@ public class Offers_Management extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_offers_management);
 
-        createOffer = (CardView)findViewById(R.id.createOffer);
-        createOffer.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openCreateOffer();
-            }
-        });
+//        createOffer = (CardView)findViewById(R.id.createOffer);
+//        createOffer.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                openCreateOffer();
+//            }
+       // });
 
         myOffer = (CardView)findViewById(R.id.myOffers);
 //        myOffer.setOnClickListener(new View.OnClickListener() {
@@ -34,10 +34,10 @@ public class Offers_Management extends AppCompatActivity {
 //        });
 
     }
-    public void openCreateOffer(){
-        Intent intent = new Intent(this, CreateOffer.class);
-        startActivity(intent);
-    }
+//    public void openCreateOffer(){
+//        Intent intent = new Intent(this, CreateOffer.class);
+//        startActivity(intent);
+//    }
 
     //change to MyOffers --- if required
 
