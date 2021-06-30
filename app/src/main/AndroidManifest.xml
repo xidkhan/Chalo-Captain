@@ -9,13 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ChaloCaptain">
-        <activity android:name=".RequestDetails"></activity>
+        <activity android:name=".RequestDetails" />
         <activity android:name=".Requests" />
         <activity android:name=".CreateOffer$OfferAdapter" />
         <activity android:name=".StartEndPoints" />
         <activity android:name=".ResetPassword" />
         <activity android:name=".ForgotPassword" />
-        <activity android:name=".MyOffers" />
         <activity android:name=".Offers_Management" />
         <activity android:name=".CreateOffer" />
         <activity android:name=".Rating" />

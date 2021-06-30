@@ -26,12 +26,12 @@ public class Offers_Management extends AppCompatActivity {
         });
 
         myOffer = (CardView)findViewById(R.id.myOffers);
-        myOffer.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openMyOffers();
-            }
-        });
+//        myOffer.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                openMyOffers();
+//            }
+//        });
 
     }
     public void openCreateOffer(){
@@ -41,8 +41,8 @@ public class Offers_Management extends AppCompatActivity {
 
     //change to MyOffers --- if required
 
-    public void openMyOffers(){
-        Intent intent = new Intent(this, MyOffers.class);
-        startActivity(intent);
-    }
+//    public void openMyOffers(){
+//        Intent intent = new Intent(this, MyOffers.class);
+//        startActivity(intent);
+//    }
 }

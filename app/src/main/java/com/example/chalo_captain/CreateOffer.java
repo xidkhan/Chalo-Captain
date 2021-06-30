@@ -44,7 +44,7 @@ public class CreateOffer extends AppCompatActivity {
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
-            setContentView(R.layout.activity_offer_adapter);
+            setContentView(R.layout.activity_offer_list);
 
             recyclerView = findViewById(R.id.recycleView);
             recyclerView.setLayoutManager(new LinearLayoutManager(this));
